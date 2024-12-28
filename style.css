@@ -138,6 +138,10 @@ a{
     z-index: 1;
 }
 @media (max-width:600px){
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
     .sci{
         display: flex;
     }
