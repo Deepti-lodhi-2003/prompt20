@@ -142,6 +142,12 @@ a{
         display: flex;
         flex-direction: column;
     }
+    .home-img{
+        order: 1;
+    }
+    .home-info{
+        order: 2;
+    }
     .sci{
         display: flex;
     }
