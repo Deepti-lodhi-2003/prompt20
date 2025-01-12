@@ -30,7 +30,9 @@ a {
     font-size: 30px;
     font-weight: 700;
 }
-
+.navbar i{
+    display: none;
+}
 .navbar ul {
     list-style: none;
     display: flex;
@@ -65,12 +67,16 @@ a {
 
 .home-info h2 {
     font-size: 32px;
-    margin-top: -10px;
+    margin-top: 10px;
+}
+.home-info p{
+    margin-top: 10px;
 }
 
 .home-info .btn-sci {
     display: flex;
     align-items: center;
+    margin-top: 20px;
 }
 
 .btn {
@@ -124,7 +130,7 @@ a {
     overflow: hidden;
 }
 
-.img-box::before,
+/* .img-box::before,
 .img-box::after {
     content: '';
     position: absolute;
@@ -143,7 +149,7 @@ a {
     100% {
         transform: rotate(360deg);
     }
-}
+} */
 
 .img-item {
     position: relative;
@@ -157,41 +163,55 @@ a {
     z-index: 1;
 }
 
-/* Responsive Styles */
 @media (max-width: 600px) {
     .home {
         flex-direction: column;
-        padding: 30px 5%; /* Reduced padding */
+        padding: 30px 5%; 
     }
 
     .home-info h1 {
-        font-size: 40px; /* Smaller font size */
+        font-size: 40px; 
     }
 
     .home -info h2 {
-        font-size: 24px; /* Smaller font size */
+        font-size: 24px; 
     }
 
     .btn {
-        padding: 8px 20px; /* Reduced padding */
-        font-size: 14px; /* Smaller font size */
+        padding: 8px 20px; 
+        font-size: 14px;
     }
 
     .navbar .logo {
-        font-size: 24px; /* Smaller logo size */
+        font-size: 24px;
     }
-
-    .navbar ul li a {
-        font-size: 18px; /* Smaller link size */
+    .navbar i{
+        display:inline;
+        color: #fff;
+        font-size: 27px;
     }
-
+    .navbar ul{
+        display: none;
+    }
     .home-img .img-box {
-        width: 80vw; /* Responsive width */
-        height: 80vw; /* Responsive height */
+        width: 80vw; 
+        height: 80vw; 
     }
-
+    .btn-sci{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: -150px;
+    }
+    .btn-sci .btn{
+        margin-left: -50px;
+        order: 2;
+    }
     .home-info .btn-sci .sci a {
-        padding: 6px; /* Reduced padding for social icons */
-        font-size: 18px; /* Smaller icon size */
+        padding: 6px;
+        font-size: 18px; 
+    }
+    .home {
+        margin-top: 80px;
     }
 }
